@@ -9,7 +9,6 @@ body {
 ul, .footer, .texto {
     font-size: 18px;
     color: #E5E7EB;
-   
 }
 
 .header, .footer, .top {
@@ -27,4 +26,19 @@ ul, .footer, .texto {
 }
 button, .button-top {
     background-color: #3882F6;
+    color: #E5E7EB;
+}   
+.sing-up {
+    background-color: #3882F6;
+    color: #E5E7EB;
+}
+.titulo-page {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
 }
