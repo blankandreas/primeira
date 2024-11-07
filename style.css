@@ -4,11 +4,20 @@ body {
     font-family: Roboto;
     display: flex;
     flex-direction: column;
+
 }
 
 ul, .footer, .texto {
     font-size: 18px;
     color: #E5E7EB;
+    list-style-type: none;
+    }
+
+li {
+        padding: 15px;
+    }
+.footer {
+    text-align: center;
 }
 
 .header, .footer, .top {
@@ -40,5 +49,20 @@ button, .button-top {
 .quote {
     font-size: 36px;
     color: #1F2937;
+    background-color: #E5E7EB;
     font-style: italic;
 }
+.header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo, .sing-up {
+    display: flex;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
