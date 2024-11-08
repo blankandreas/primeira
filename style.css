@@ -1,10 +1,11 @@
 
 
 body {
-    font-family: Roboto;
+    font-family: roboto, arial;
     display: flex;
     flex-direction: column;
-  
+    margin: 0;
+    
 }
 
 ul, .footer, .texto {
@@ -24,6 +25,7 @@ a {
 }    
 .footer {
     text-align: center;
+    padding: 15px;
 }
 
 .header, .footer, .topo {
@@ -41,13 +43,21 @@ a {
     font-weight: 900;
     flex-wrap: wrap;
 }
-button, .button-top {
+.button-call, .button-top {
     background-color: #3882F6;
     color: #E5E7EB;
-    border-radius: 10%;
+    font-weight: bold;
+    border-radius: 5px;
     width: 100px;
-    padding: 15px 5px;
+    height: 40px;
+    padding: 10px;
+    border-width: 0px;
 }   
+
+.button-call {
+    border-color: #E5E7EB;
+    border-width: 3px;
+}
 .sing-up {
     background-color: #3882F6;
     color: #E5E7EB;
@@ -56,13 +66,26 @@ button, .button-top {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    margin: 25px;
 }
 .quote {
     font-size: 36px;
     color: #1F2937;
     background-color: #E5E7EB;
     font-style: italic;
+     
+
 }
+.square {
+    border: #3882F6;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: medium;
+    height: 200px;
+    width: 200px;
+}
+
+
 .header, ul{
     display: flex;
     justify-content: space-between;
@@ -71,26 +94,67 @@ button, .button-top {
 
 .topo {
        display: flex;
-       height: 400px;
        align-items: center;
+       height: 400px;
+       padding: 15px;
 }
-
-.left {
-    flex-direction: column;
- }
 
  .left, .right {
     display: flex;
+    gap: 15px;
     flex: 1;
-    gap: 5px;
-    margin-left: 15px; 
-    margin-right: 15px;   
  }
+.left {
+    flex-direction: column;
+    
+ }
+ .right{
+    justify-content: center;
+    padding: 15px;
+     
+ }
+.hook {
+    display: flex;
+    height: 400px;
+    width: auto;
+    
+} 
 img {
-    width: 100%;
-    height: 0;
-    padding-bottom: 150%;
+        object-fit: fill;
+        
 }
-.left{
-    float: left;
+.cards {
+    display: flex;
+    gap: 15px;
+    margin: 25px;
+    flex-wrap: wrap;
+
 }
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    
+}
+.quote {
+    padding: 30px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ }
+.sing-up {
+    display: flex;
+    align-self: center;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+
+ 
