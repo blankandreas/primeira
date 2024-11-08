@@ -4,13 +4,14 @@ body {
     font-family: Roboto;
     display: flex;
     flex-direction: column;
-
+  
 }
 
 ul, .footer, .texto {
     font-size: 18px;
     color: #E5E7EB;
     list-style-type: none;
+    flex-wrap: wrap;
     }
 
 li {
@@ -38,10 +39,14 @@ a {
 .titulo {
     font-size: 48px;
     font-weight: 900;
+    flex-wrap: wrap;
 }
 button, .button-top {
     background-color: #3882F6;
     color: #E5E7EB;
+    border-radius: 10%;
+    width: 100px;
+    padding: 15px 5px;
 }   
 .sing-up {
     background-color: #3882F6;
@@ -64,11 +69,28 @@ button, .button-top {
     align-items: center;
 }
 
-.topo, .sing-up {
-    display: flex;
-}
-.left {
-    display: flex;
-    flex-direction: column;
+.topo {
+       display: flex;
+       height: 400px;
+       align-items: center;
 }
 
+.left {
+    flex-direction: column;
+ }
+
+ .left, .right {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    margin-left: 15px; 
+    margin-right: 15px;   
+ }
+img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%;
+}
+.left{
+    float: left;
+}
